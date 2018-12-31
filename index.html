@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Budget App</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="app-wrap">
+		<div class="hero">
+			<div class="display-wrap">
+				<h2 class="budget-display-month">
+					Available budget for <span id="date">December</span>
+				</h2>
+				<div class="budget-total">	
+					<span class="budget-status"></span>
+					<h1>
+						0.00
+					</h1>
+				</div>
+				<div class="budget-income income-bg">
+					<span>INCOME</span><p>+ 0.00</p>
+				</div>
+				<div class="budget-expense expense-bg">
+					<span>EXPENSE</span><p>- 0.00</p>
+				</div>
+			</div>
+		</div>
+		<div class="budget-controls">
+			<form>
+				<p>Add Income (+) or Expenses (-)</p>
+				<select name="budget-option" id="budgetOption">
+					<option value="plus">+</option>
+					<option value="minus">-</option>
+				</select>
+					<input type="text" placeholder="Add description" id="budgetDescription">
+					<input type="number" placeholder="Value" id="budgetAmount">
+					<input type="submit" value="Submit" id="budgetSubmit">
+			</form>
+		</div>
+		<div class="budget-show-lists">	
+			<div class="income-show-list-wrap">
+				<h2 class="income">INCOMES</h2>
+				<ul></ul>
+			</div>
+			<div class="expense-show-list-wrap">
+				<h2 class="expense">EXPENSES</h2>
+				<ul></ul>
+			</div>
+		</div>
+	</div>
+
+	<script src="index.js"></script>
+</body>
+</html>
